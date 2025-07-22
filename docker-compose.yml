@@ -1,8 +1,8 @@
 services:
   osrm:
     build: .
-    volumes:
-      - ./data:/data
+    # volumes:
+    #   - ./data:/data
     entrypoint: >
       sh -c "
         osrm-extract -p /opt/car.lua /data/iran-latest.osm.pbf &&
